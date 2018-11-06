@@ -2,23 +2,22 @@
 
 PImage img;
 
-void setup() {
-  size(800, 500);
-  img = loadImage("pumpkins.png");
+void setup(){
+  size(480,360);
+  img=loadImage("WAVE.png");
   image(img, 0, 0);
 }
 
-void draw() 
+void draw()
 {
-  save("YOURNAME.Halloween.png");
+  save("KAI.halloween.png");
 }
 
 void mouseDragged()
 {
-  //"Carves" the pumpkins
-  //blendMode optional, might be problematic with a light or white background
-  blendMode(OVERLAY); 
+  //"carves" the pumpkins
+  //blendMode(OVERLAY);
   noStroke();
-  fill(255, 200, 25);
-  ellipse(mouseX, mouseY, 5, 5);
+  fill(255, 0, 0);
+  ellipse(mouseX-0, mouseY-0, 50, 50);
 }
